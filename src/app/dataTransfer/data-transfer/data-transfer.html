@@ -1,0 +1,9 @@
+<div [ngStyle]="{'border': '1px solid green', 'padding': '15px'}">
+  <button (click)="passValue()">Parent Button</button>
+  <p>from child: {{changeByChild}}</p>
+
+  <app-child-component
+    [parentToChild]="value"
+    (childToParent)="showDataFromChild($event)"
+  ></app-child-component>
+</div>

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-parent-component',
-  templateUrl: './parent-component.component.html',
-  styleUrls: ['./parent-component.component.scss'],
+  selector: 'app-data-transfer',
+  templateUrl: './data-transfer.html',
+  styleUrls: ['./data-transfer.scss'],
 })
-export class ParentComponentComponent implements OnInit {
+export class DataTransferComponent implements OnInit {
   value: string = '';
   changeByChild: string = '';
   constructor() {}

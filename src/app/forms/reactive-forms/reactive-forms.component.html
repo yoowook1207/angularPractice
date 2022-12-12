@@ -1,0 +1,19 @@
+<section class="container">
+    <h2>Reactive Forms</h2>
+    <form [formGroup]="formSet" (ngSubmit)="onSubmit()">
+        <div class="input_holder">
+            <input formControlName="first_name" placeholder="first name">
+            <input formControlName="last_name" placeholder="last name">
+            <input formControlName="email" placeholder="email">
+            <p *ngIf="!email.valid && (email.dirty || email.touched)">
+                please check your email
+            </p>
+            <button type="submit" class="submitBtn">SUBMIT</button>
+        </div>
+    </form>
+    <div class="form_result">
+        <p>{{user.first_name}}</p>
+        <p>{{user.last_name}}</p>
+        <p>{{user.email}}</p>
+    </div>
+</section>

@@ -1,0 +1,8 @@
+<section>
+  <button class="like-button" (click)="handleLike($event)">
+    Like | <span class="likes-counter">{{ likesCounter }}</span>
+  </button>
+  <button class="dislike-button" (click)="handleDislike($event)">
+    Dislike | <span class="dislikes-counter">{{ dislikesCounter }}</span>
+  </button>
+</section>
