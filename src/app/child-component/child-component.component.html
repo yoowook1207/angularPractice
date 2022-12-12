@@ -1,0 +1,6 @@
+
+<div [ngStyle]="{'border': '1px solid red', 'padding': '5px'}">
+    <p>{{parentToChild}}</p>
+    <input type="text" #textInput>
+    <button (click)="passToParent(textInput.value)">Child Button</button>
+</div>
