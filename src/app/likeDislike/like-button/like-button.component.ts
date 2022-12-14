@@ -5,10 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './like-button.component.html',
   styleUrls: ['./like-button.component.scss'],
   styles: [
-    '.liked {color: blue; font-weight: 600}',
-    '.disliked {color: red; font-weight: 600}',
-
-  ]
+    '.liked {color: blue; font-weight: 600;}',
+    '.disliked {color: red; font-weight: 600;}',
+  ],
 })
 export class LikeButtonComponent implements OnInit {
   likesCounter: number = 100;
@@ -36,6 +35,7 @@ export class LikeButtonComponent implements OnInit {
       event.currentTarget.classList.remove('disliked');
     } else {
       this.dislikesCounter = this.dislikesCounter + 1;
-      event.currentTarget.classList.add('disliked');    }
+      event.currentTarget.classList.add('disliked');
+    }
   }
 }

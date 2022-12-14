@@ -1,0 +1,27 @@
+<section appScrollTracker class="container">
+    <div class="btns">
+        <p>Scroll Navigation</p>
+        <button (click)="moveToBlue()">To Blue</button>
+        <button (click)="moveToRed()">To Red</button>
+        <button (click)="moveToYellow()">To Yellow</button>
+        <button (click)="moveToGreen()">To Green</button>
+        <button (click)="scrollBy()">scroll by</button>
+      </div>
+      <div class="blueBox">
+        <span #blue></span>
+        scrolling works!
+      </div>
+      <div class="redBox" id="red">
+        <span #red></span>
+        scrolling works!
+      </div>
+      <div class="yellowBox">
+        <span #yellow></span>
+        scrolling works!
+      </div>
+      <div class="greenBox">
+        <span #green></span>
+        scrolling works!
+      </div>
+</section>
+

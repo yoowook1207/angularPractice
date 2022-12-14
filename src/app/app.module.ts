@@ -9,6 +9,8 @@ import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.co
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { LikeButtonComponent } from './likeDislike/like-button/like-button.component';
+import { ScrollingComponent } from './scrollingRenderer2/scrolling/scrolling.component';
+import { ScrollTrackerDirective } from './scrollingRenderer2/scroll-tracker.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LikeButtonComponent } from './likeDislike/like-button/like-button.compo
     DataTransferComponent,
     ChildComponentComponent,
     ReactiveFormsComponent,
-    LikeButtonComponent
+    LikeButtonComponent,
+    ScrollingComponent,
+    ScrollTrackerDirective
   ],
   imports: [
     BrowserModule,
