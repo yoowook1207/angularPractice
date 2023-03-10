@@ -11,6 +11,12 @@ import { CommonModule } from '@angular/common';
 import { LikeButtonComponent } from './likeDislike/like-button/like-button.component';
 import { ScrollingComponent } from './scrollingRenderer2/scrolling/scrolling.component';
 import { ScrollTrackerDirective } from './scrollingRenderer2/scroll-tracker.directive';
+import { SecondFormsComponent } from './second-forms/second-forms.component';
+import { PureImpurePipesComponent } from './pure-impure-pipes/pure-impure-pipes.component';
+import { UserOutputPipe } from './util/user-output.pipe';
+import { UserOutputPurePipe } from './util/user-output-pure.pipe';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +26,11 @@ import { ScrollTrackerDirective } from './scrollingRenderer2/scroll-tracker.dire
     ReactiveFormsComponent,
     LikeButtonComponent,
     ScrollingComponent,
-    ScrollTrackerDirective
+    ScrollTrackerDirective,
+    SecondFormsComponent,
+    PureImpurePipesComponent,
+    UserOutputPipe,
+    UserOutputPurePipe,
   ],
   imports: [
     BrowserModule,
